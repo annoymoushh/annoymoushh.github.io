@@ -150,14 +150,13 @@
       <div class="column is-four-fifths">
         <div class="box m-5">
           <div class="content has-text-centered">
-            <h3 class="title is-4">Teaser</h3>
+            <h3 class="title is-4">Comparison between Existing Approaches and OmniSAT.</h3>
             <figure>
               <img src="./static/teaser-1.png" alt="Teaser" style="width:100%; max-width:800px;">
             </figure>
             <p class="has-text-left" style="margin-top: 1rem;">
-              <strong>Comparison between Existing Approaches and OmniSAT.</strong><br>
-              (a) Diffusion-based policies require iterative denoising, limiting training efficiency and scalability.<br>
-              (b) AR policies train efficiently and support flexible sequence construction, but sacrifice fine-grained accuracy in continuous control.<br>
+              (a) Diffusion-based policies require iterative denoising, limiting training efficiency and scalability.
+              (b) AR policies train efficiently and support flexible sequence construction, but sacrifice fine-grained accuracy in continuous control.
               (c) OmniSAT amplifies AR efficiency through feasible high-rate compression while providing a unified token space that enables integration of heterogeneous datasets.
             </p>
           </div>
@@ -192,13 +191,12 @@
       <div class="column is-four-fifths">
         <div class="box m-5">
           <div class="content has-text-centered">
-            <h3 class="title is-4">SAT Diagram</h3>
+            <h3 class="title is-4">OmniSAT Tokenization Pipeline</h3>
             <figure>
               <img src="./static/sat-1.png" alt="SAT Diagram" style="width:100%; max-width:800px;">
             </figure>
             <p class="has-text-left" style="margin-top: 1rem;">
-              <strong>Overview of OmniSAT Tokenization Pipeline.</strong><br>
-              <strong>Consistency Encoding</strong> converts variable-length trajectories into temporally aligned, fixed-length control-point representations via B-spline fitting.<br>
+              <strong>Consistency Encoding</strong> converts variable-length trajectories into temporally aligned, fixed-length control-point representations via B-spline fitting.
               <strong>Quantization Compression</strong> splits control-point features into part groups (position, rotation, gripper) and applies residual vector quantization to obtain layerwise codebook indices. The selected indices are then flattened into final compact action-pattern tokens.
             </p>
           </div>
@@ -260,14 +258,13 @@
       <div class="column is-four-fifths">
         <div class="box m-5">
           <div class="content has-text-centered">
-            <h3 class="title is-4">Method Diagram</h3>
+            <h3 class="title is-4">OmniSAT for Cross-Embodiment Manipulation Learning.</h3>
             <figure>
               <img src="./static/method-1.png" alt="Method Diagram" style="width:100%; max-width:800px;">
             </figure>
             <p class="has-text-left" style="margin-top: 1rem;">
-              <strong>OmniSAT for Cross-Embodiment Manipulation Learning.</strong><br>
-              The training pipeline has two phases:<br>
-              (i) <strong>Tokenizer Pretraining</strong>: OmniSAT is pretrained on heterogeneous human–robot datasets to learn a unified and compressed (× 6.8) action token space;<br>
+              The training pipeline has two phases:
+              (i) <strong>Tokenizer Pretraining</strong>: OmniSAT is pretrained on heterogeneous human–robot datasets to learn a unified and compressed (× 6.8) action token space;
               (ii) <strong>Cross-Embodiment Fine-Tuning</strong>: we construct mixed visual-action auto-regressive sequences over OmniSAT token space, enabling efficient and scalable fine-tuning through shorter sequences and lower target entropy.
             </p>
           </div>
