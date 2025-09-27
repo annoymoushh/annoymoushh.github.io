@@ -6,7 +6,7 @@
         content="Can Leveraging Human Videos Enhance Performance and Generalizability in Bimanual Manipulation?">
   <meta name="keywords" content="Bimanual Manipulation, Egocentric Human Video">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>H2R-BM</title>
+  <title>OmniSAT</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -87,7 +87,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">H2R-BM: Can Leveraging Human Videos Enhance Performance and Generalizability in Bimanual Manipulation?</h1>
+          <h1 class="title is-1 publication-title">OmniSAT: Compact Action Token, Faster Auto Regression</h1>
           <div class="is-size-5 publication-authors">
             <div class="is-size-5 publication-authors">
               <span class="author-block">Anonymous Authors</span>
@@ -145,21 +145,21 @@
 
 <section class="section">
   <div class="container is-custom-width">
-    <!-- Teaser Image -->
-    <div class="columns is-centered">
-      <div class="container">
-        <div class="content has-text-centered">
-          <h2 class="title is-3"><strong>Motivation of H2R-BM</strong></h2>
-
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <figure>
-                  <img src="./static/images/teaser.png" alt="Teaser" style="width:90%;">
-                <figcaption>
-                  Acquiring robot videos via teleoperation is costly and inefficient, whereas human videos from wearable devices provide a cheaper, more efficient alternative. H2R-BM leverages human videos to minimize dependence on robot data for bimanual manipulation, reducing data collection costs.
-                </figcaption>
-              </figure>
-            </div>
+    <!-- Teaser PDF -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="box m-5">
+          <div class="content has-text-centered">
+            <h3 class="title is-4">Teaser</h3>
+            <iframe src="./static/teaser-1.png" width="100%" height="600px" style="border: none;">
+              <p>Your browser does not support PDFs. <a href="./static/teaser.pdf">Download the teaser PDF</a></p>
+            </iframe>
+            <p class="has-text-left" style="margin-top: 1rem;">
+              <strong>Comparison between Existing Approaches and OmniSAT.</strong><br>
+              (a) Diffusion-based policies require iterative denoising, limiting training efficiency and scalability.<br>
+              (b) AR policies train efficiently and support flexible sequence construction, but sacrifice fine-grained accuracy in continuous control.<br>
+              (c) OmniSAT amplifies AR efficiency through feasible high-rate compression while providing a unified token space that enables integration of heterogeneous datasets.
+            </p>
           </div>
         </div>
       </div>
@@ -186,26 +186,6 @@
     </div>
     <!--/ Abstract. -->
 
-    <!-- Teaser PDF -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <div class="box m-5">
-          <div class="content has-text-centered">
-            <h3 class="title is-4">Teaser</h3>
-            <iframe src="./static/teaser.pdf" width="100%" height="600px" style="border: none;">
-              <p>Your browser does not support PDFs. <a href="./static/teaser.pdf">Download the teaser PDF</a></p>
-            </iframe>
-            <p class="has-text-left" style="margin-top: 1rem;">
-              <strong>Comparison between Existing Approaches and OmniSAT.</strong><br>
-              (a) Diffusion-based policies require iterative denoising, limiting training efficiency and scalability.<br>
-              (b) AR policies train efficiently and support flexible sequence construction, but sacrifice fine-grained accuracy in continuous control.<br>
-              (c) OmniSAT amplifies AR efficiency through feasible high-rate compression while providing a unified token space that enables integration of heterogeneous datasets.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--/ Teaser PDF -->
 
     <!-- SAT Diagram -->
     <div class="columns is-centered has-text-centered">
@@ -213,9 +193,9 @@
         <div class="box m-5">
           <div class="content has-text-centered">
             <h3 class="title is-4">SAT Diagram</h3>
-            <iframe src="./static/sat.pdf" width="100%" height="600px" style="border: none;">
-              <p>Your browser does not support PDFs. <a href="./static/sat.pdf">Download the SAT diagram PDF</a></p>
-            </iframe>
+            <figure>
+              <img src="./static/sat-1.png" alt="SAT Diagram" style="width:100%; max-width:800px;">
+            </figure>
             <p class="has-text-left" style="margin-top: 1rem;">
               <strong>Overview of OmniSAT Tokenization Pipeline.</strong><br>
               <strong>Consistency Encoding</strong> converts variable-length trajectories into temporally aligned, fixed-length control-point representations via B-spline fitting.<br>
@@ -281,7 +261,7 @@
         <div class="box m-5">
           <div class="content has-text-centered">
             <h3 class="title is-4">Method Diagram</h3>
-            <iframe src="./static/method.pdf" width="100%" height="600px" style="border: none;">
+            <iframe src="./static/method-1.png" width="100%" height="600px" style="border: none;">
               <p>Your browser does not support PDFs. <a href="./static/method.pdf">Download the method diagram PDF</a></p>
             </iframe>
             <p class="has-text-left" style="margin-top: 1rem;">
