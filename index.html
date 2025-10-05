@@ -60,25 +60,6 @@
       <span aria-hidden="true"></span>
     </a>
   </div>
-  <!-- <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div> -->
 </nav>
 
 
@@ -93,50 +74,6 @@
               <span class="author-block">Anonymous Authors</span>
             </div>
 
-          <!-- <div class="column has-text-centered">
-            <div class="publication-links"> -->
-              <!-- PDF Link. -->
-              <!-- <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span> -->
-              <!-- Video Link. -->
-              <!-- <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span> -->
-              <!-- Code Link. -->
-              <!-- <span class="link-block">
-                <a href="https://github.com/google/nerfies"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span> -->
-            <!-- </div>
-
-          </div> -->
         </div>
       </div>
     </div>
@@ -144,6 +81,7 @@
 </section>
 
 <section class="section">
+  <div class="container is-custom-width">
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -157,6 +95,28 @@
       </div>
     </div>
     <!--/ Paper video. -->
+
+    <!-- Teaser Image -->
+    <div class="columns is-centered">
+      <div class="container">
+        <div class="content has-text-centered">
+          <h2 class="title is-3"><strong>Comparison between Existing Approaches and OmniSAT</strong></h2>
+
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <figure>
+                  <img src="./static/teaser-1.png" alt="Teaser" style="width:90%;">
+                <figcaption>
+                  (a) Diffusion-based policies require iterative denoising, limiting training efficiency and scalability.
+                  (b) AR policies train efficiently and support flexible sequence construction, but sacrifice fine-grained accuracy in continuous control.
+                  (c) OmniSAT amplifies AR efficiency through feasible high-rate compression while providing a unified token space that enables integration of heterogeneous datasets.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
@@ -177,26 +137,7 @@
       </div>
     </div>
     <!--/ Abstract. -->
-
-    <div class="container is-custom-width">
-      <!-- Teaser PDF -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <h3 class="title is-4">Comparison between Existing Approaches and OmniSAT.</h3>
-              <figure>
-                <img src="./static/teaser-1.png" alt="Teaser" style="width:100%; max-width:800px;">
-              </figure>
-              <p class="has-text-left" style="margin-top: 1rem;">
-                (a) Diffusion-based policies require iterative denoising, limiting training efficiency and scalability.
-                (b) AR policies train efficiently and support flexible sequence construction, but sacrifice fine-grained accuracy in continuous control.
-                (c) OmniSAT amplifies AR efficiency through feasible high-rate compression while providing a unified token space that enables integration of heterogeneous datasets.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+  </div>
 
     <!-- SAT Diagram -->
     <div class="columns is-centered has-text-centered">
@@ -217,52 +158,6 @@
     </div>
     <!--/ SAT Diagram -->
 
-    <!-- <div class="content has-text-centered">
-      <h2 class="title is-3"><strong>Retry Phenomenon Example</strong></h2>
-    </div>
-    <div class="container is-max-widescreen">
-      <div class="box m-5">
-          
-        <div class="content has-text-centered">
-          <div class="columns is-centered">
-            <div class="column is-half">
-              <video controls autoplay muted loop playsinline style="width:100%; max-width:400px;">
-                <source src="./static/videos/success_example.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-              <p><strong>With H2R-BM</strong></p>
-            </div>
-            <div class="column is-half">
-              <video controls autoplay muted loop playsinline style="width:100%; max-width:400px;">
-                <source src="./static/videos/fail_example.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-              <p><strong>Without H2R-BM</strong></p>
-            </div>
-          </div>
-        </div>
-    
-        <div class="content has-text-centered">
-          <div class="columns is-centered">
-            <div class="column is-half">
-              <video controls autoplay muted loop playsinline style="width:100%; max-width:400px;">
-                <source src="./static/videos/groceries_success.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-              <p><strong>With H2R-BM</strong></p>
-            </div>
-            <div class="column is-half">
-              <video controls autoplay muted loop playsinline style="width:100%; max-width:400px;">
-                <source src="./static/videos/groceries_failure.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-              <p><strong>Without H2R-BM</strong></p>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </div> -->
 
     
     <!-- Method Diagram -->
@@ -285,185 +180,16 @@
     </div>
     <!--/ Method Diagram -->
     
-  <!-- Example Training Data -->
-    <!-- <div class="columns is-centered">
-      <div class="container">
-        <div class="content has-text-centered">
-          <h2 class="title is-3"><strong>Example Training Data</strong></h2>
-          <div class="box m-5">
-            <div class="columns is-centered">
-              
-              <!-- Human Video -->
-              <!-- <div class="column is-half">
-                <video controls autoplay muted loop playsinline style="width:100%; max-width:400px;">
-                  <source src="./static/videos/human_example.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p><strong>Human Video</strong></p>
-              </div>
-              <!-- Robot Video -->
-              <!-- <div class="column is-half">
-                <video controls autoplay muted loop playsinline style="width:100%; max-width:400px;">
-                  <source src="./static/videos/robot_example.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p><strong>Robot Video</strong></p>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Example Training Data -->
-    <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Paper video. -->
   </div>
 </section>
-<!-- 
-<section class="section">
-  <div class="container is-max-desktop">
- -->
-    <!-- <div class="columns is-centered"> -->
-
-      <!-- Visual Effects. -->
-<!--       <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Human Example</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="human example" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/human_example.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div> -->
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-<!--       <div class="column">
-        <h2 class="title is-3">Robot Example</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-             <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p> 
-            <video id="robot_example" controls playsinline height="100%">
-              <source src="./static/videos/robot_example.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div> 
-    </div> -->
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <!-- <div class="columns is-centered">
-      <div class="column is-full-width"> -->
-        <!-- <h2 class="title is-3">Animation</h2> -->
-
-        <!-- Interpolating. -->
-        <!-- <h3 class="title is-4">Interpolating states</h3> -->
-        <!-- <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div> -->
-        <!-- <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div> -->
-        <!-- <br/> -->
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <!-- <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div> -->
-        <!--/ Re-rendering. -->
-
-      <!-- </div>
-    </div> -->
-    <!--/ Animation. -->
-
-  <!-- </div> -->
-<!-- </section> -->
 
 
 
-<!-- <section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
-}</code></pre>
-  </div>
-</section> -->
+
 
 
 <footer class="footer">
   <div class="container">
-<!--     <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div> -->
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
