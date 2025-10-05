@@ -118,62 +118,63 @@
       </div>
     </div>
 
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Existing Vision-Language-Action (VLA) models can be broadly categorized into diffusion-based and auto-regressive (AR) approaches: diffusion models capture continuous action distributions but rely on computationally heavy iterative denoising. In contrast, AR models enable efficient optimization and flexible sequence construction, making them better suited for large-scale pretraining. To further improve AR efficiency, particularly when action chunks induce extended and high-dimensional sequences, prior work applies entropy-guided and token-frequency techniques to shorten the sequence length. 
-            However, such compression struggled with <i>poor reconstruction or inefficient compression</i>.
-            Motivated by this, we introduce an <b>O</b>mni <b>S</b>wift <b>A</b>ction <b>T</b>okenizer, which learns a compact, transferable action representation.
-            Specifically, we first normalize value ranges and temporal horizons to obtain a <b>consistent representation</b> with B-Spline encoding.
-            Then, we apply multi-stage residual quantization to the position, rotation, and gripper subspaces, producing <b>compressed discrete tokens with coarse-to-fine granularity</b> for each part.
-            After pre-training on the large-scale dataset Droid, the resulting discrete tokenization shortens the training sequence by <b>6.8</b>×, and lowers the target entropy.
-            To further explore the potential of <b><i>OmniSAT</i></b>, we develop a cross-embodiment learning strategy that builds on the unified action-pattern space and jointly leverages robot and human demonstrations. It enables scalable auxiliary supervision from heterogeneous egocentric videos.
-            Across diverse real-robot and simulation experiments, OmniSAT encompasses higher compression while preserving reconstruction quality, enabling faster AR training convergence and model performance.
-          </p>
+    <!-- Abstract and Real-world Experiments -->
+    <div class="container is-custom-width">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Existing Vision-Language-Action (VLA) models can be broadly categorized into diffusion-based and auto-regressive (AR) approaches: diffusion models capture continuous action distributions but rely on computationally heavy iterative denoising. In contrast, AR models enable efficient optimization and flexible sequence construction, making them better suited for large-scale pretraining. To further improve AR efficiency, particularly when action chunks induce extended and high-dimensional sequences, prior work applies entropy-guided and token-frequency techniques to shorten the sequence length. 
+              However, such compression struggled with <i>poor reconstruction or inefficient compression</i>.
+              Motivated by this, we introduce an <b>O</b>mni <b>S</b>wift <b>A</b>ction <b>T</b>okenizer, which learns a compact, transferable action representation.
+              Specifically, we first normalize value ranges and temporal horizons to obtain a <b>consistent representation</b> with B-Spline encoding.
+              Then, we apply multi-stage residual quantization to the position, rotation, and gripper subspaces, producing <b>compressed discrete tokens with coarse-to-fine granularity</b> for each part.
+              After pre-training on the large-scale dataset Droid, the resulting discrete tokenization shortens the training sequence by <b>6.8</b>×, and lowers the target entropy.
+              To further explore the potential of <b><i>OmniSAT</i></b>, we develop a cross-embodiment learning strategy that builds on the unified action-pattern space and jointly leverages robot and human demonstrations. It enables scalable auxiliary supervision from heterogeneous egocentric videos.
+              Across diverse real-robot and simulation experiments, OmniSAT encompasses higher compression while preserving reconstruction quality, enabling faster AR training convergence and model performance.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <!--/ Abstract. -->
+      <!--/ Abstract. -->
 
-    <!-- Real-world Experiments -->
-    <div class="content has-text-centered">
-      <h2 class="title is-3"><strong>Real-world Experiments</strong></h2>
-    </div>
-    <div class="container is-max-widescreen">
-      <div class="box m-5">
-        <div class="content has-text-centered">
-          <div class="columns is-centered">
-            <div class="column is-one-third">
-              <video controls autoplay muted loop playsinline style="width:100%; max-width:300px;">
-                <source src="./static/PlaceObj.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-              <p><strong>PlaceObj</strong></p>
-            </div>
-            <div class="column is-one-third">
-              <video controls autoplay muted loop playsinline style="width:100%; max-width:300px;">
-                <source src="./static/TubeRack.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-              <p><strong>TubeRack</strong></p>
-            </div>
-            <div class="column is-one-third">
-              <video controls autoplay muted loop playsinline style="width:100%; max-width:300px;">
-                <source src="./static/ZipSeal.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-              <p><strong>ZipSeal</strong></p>
+      <!-- Real-world Experiments -->
+      <div class="content has-text-centered">
+        <h2 class="title is-3"><strong>Real-world Experiments</strong></h2>
+      </div>
+      <div class="container is-max-widescreen">
+        <div class="box m-5">
+          <div class="content has-text-centered">
+            <div class="columns is-centered">
+              <div class="column is-one-third">
+                <video controls autoplay muted loop playsinline style="width:100%; max-width:300px;">
+                  <source src="./static/PlaceObj.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <p><strong>PlaceObj</strong></p>
+              </div>
+              <div class="column is-one-third">
+                <video controls autoplay muted loop playsinline style="width:100%; max-width:300px;">
+                  <source src="./static/TubeRack.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <p><strong>TubeRack</strong></p>
+              </div>
+              <div class="column is-one-third">
+                <video controls autoplay muted loop playsinline style="width:100%; max-width:300px;">
+                  <source src="./static/ZipSeal.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <p><strong>ZipSeal</strong></p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <!--/ Real-world Experiments -->
     </div>
-    <!--/ Real-world Experiments -->
-
-  </div>
 
     <!-- SAT Diagram -->
     <div class="columns is-centered">
