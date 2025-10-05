@@ -137,21 +137,60 @@
       </div>
     </div>
     <!--/ Abstract. -->
+
+    <!-- Real-world Experiments -->
+    <div class="content has-text-centered">
+      <h2 class="title is-3"><strong>Real-world Experiments</strong></h2>
+    </div>
+    <div class="container is-max-widescreen">
+      <div class="box m-5">
+        <div class="content has-text-centered">
+          <div class="columns is-centered">
+            <div class="column is-one-third">
+              <video controls autoplay muted loop playsinline style="width:100%; max-width:300px;">
+                <source src="./static/PlaceObj.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <p><strong>PlaceObj</strong></p>
+            </div>
+            <div class="column is-one-third">
+              <video controls autoplay muted loop playsinline style="width:100%; max-width:300px;">
+                <source src="./static/TubeRack.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <p><strong>TubeRack</strong></p>
+            </div>
+            <div class="column is-one-third">
+              <video controls autoplay muted loop playsinline style="width:100%; max-width:300px;">
+                <source src="./static/ZipSeal.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <p><strong>ZipSeal</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Real-world Experiments -->
+
   </div>
 
     <!-- SAT Diagram -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <div class="box m-5">
-          <div class="content has-text-centered">
-            <h3 class="title is-4">OmniSAT Tokenization Pipeline</h3>
-            <figure>
-              <img src="./static/sat-1.png" alt="SAT Diagram" style="width:100%; max-width:800px;">
-            </figure>
-            <p class="has-text-left" style="margin-top: 1rem;">
-              <strong>Consistency Encoding</strong> converts variable-length trajectories into temporally aligned, fixed-length control-point representations via B-spline fitting.
-              <strong>Quantization Compression</strong> splits control-point features into part groups (position, rotation, gripper) and applies residual vector quantization to obtain layerwise codebook indices. The selected indices are then flattened into final compact action-pattern tokens.
-            </p>
+    <div class="columns is-centered">
+      <div class="container">
+        <div class="content has-text-centered">
+          <h2 class="title is-3"><strong>OmniSAT Tokenization Pipeline</strong></h2>
+
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <figure>
+                  <img src="./static/sat-1.png" alt="SAT Diagram" style="width:90%;">
+                <figcaption>
+                  <strong>Consistency Encoding</strong> converts variable-length trajectories into temporally aligned, fixed-length control-point representations via B-spline fitting.
+                  <strong>Quantization Compression</strong> splits control-point features into part groups (position, rotation, gripper) and applies residual vector quantization to obtain layerwise codebook indices. The selected indices are then flattened into final compact action-pattern tokens.
+                </figcaption>
+              </figure>
+            </div>
           </div>
         </div>
       </div>
@@ -161,19 +200,22 @@
 
     
     <!-- Method Diagram -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <div class="box m-5">
-          <div class="content has-text-centered">
-            <h3 class="title is-4">OmniSAT for Cross-Embodiment Manipulation Learning.</h3>
-            <figure>
-              <img src="./static/method-1.png" alt="Method Diagram" style="width:100%; max-width:800px;">
-            </figure>
-            <p class="has-text-left" style="margin-top: 1rem;">
-              The training pipeline has two phases:
-              (i) <strong>Tokenizer Pretraining</strong>: OmniSAT is pretrained on heterogeneous human–robot datasets to learn a unified and compressed (× 6.8) action token space;
-              (ii) <strong>Cross-Embodiment Fine-Tuning</strong>: we construct mixed visual-action auto-regressive sequences over OmniSAT token space, enabling efficient and scalable fine-tuning through shorter sequences and lower target entropy.
-            </p>
+    <div class="columns is-centered">
+      <div class="container">
+        <div class="content has-text-centered">
+          <h2 class="title is-3"><strong>OmniSAT for Cross-Embodiment Manipulation Learning</strong></h2>
+
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <figure>
+                  <img src="./static/method-1.png" alt="Method Diagram" style="width:90%;">
+                <figcaption>
+                  The training pipeline has two phases:
+                  (i) <strong>Tokenizer Pretraining</strong>: OmniSAT is pretrained on heterogeneous human–robot datasets to learn a unified and compressed (× 6.8) action token space;
+                  (ii) <strong>Cross-Embodiment Fine-Tuning</strong>: we construct mixed visual-action auto-regressive sequences over OmniSAT token space, enabling efficient and scalable fine-tuning through shorter sequences and lower target entropy.
+                </figcaption>
+              </figure>
+            </div>
           </div>
         </div>
       </div>
